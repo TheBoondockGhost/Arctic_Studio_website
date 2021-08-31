@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import { StartPage } from "../components/StartPage";
+
 
 
 export default function Front() {
@@ -11,7 +13,7 @@ export default function Front() {
                 <title>Front Page</title>
             </Head>
             <main>
-                Hello world
+                <StartPage />
             </main>
         </>
     );
