@@ -1,19 +1,17 @@
-import React from "react";
-import Link from "next/link";
-import { Container, Logo } from "./style";
-import { Center } from "../Center";
-
+import Link from "next/link"
+import { Center } from "../Center"
+import { Container, Logo } from "./style"
 
 export const Header = () => {
-    return (
-        <Container>
-            <Center>
-                <Logo>
-                    <Link href="/">
-                        <a>What's next</a>
-                    </Link>
-                </Logo>
-            </Center>
-        </Container>
-    )
+  return (
+    <Container>
+      <Center>
+        <Logo>
+          <Link href="/">
+            <a>What's Next?!</a>
+          </Link>
+        </Logo>
+      </Center>
+    </Container>
+  )
 }

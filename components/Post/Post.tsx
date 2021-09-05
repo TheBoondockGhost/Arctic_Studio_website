@@ -1,20 +1,21 @@
-import { Card, Figure, Title, Content } from "./style";
-import Link from "next/link";
+import Link from "next/link"
+import { Post as PostType } from "../../shared/types"
+import { Card, Figure, Title, Lead } from "./style"
 
-export const Post = () => {
-	return (
-		<Link href="" passHref>
-			<Card>
-				<Figure>
-					<img alt="Post Photo" src="/image1.jpg" />
-				</Figure>
-				<Title>Post title!</Title>
-				<Content>
-					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, possimus a! Voluptatem voluptates exercitationem tenetur atque consequatur! Dicta totam quidem repudiandae temporibus, exercitationem ex adipisci ut voluptatibus at libero nostrum.
-					</p>
-				</Content>
-			</Card>
-		</Link>
-	)
+type PostProps = {
+  post: PostType
+}
+
+export const Post = ({ post }: PostProps) => {
+  return (
+    <Link href={`/post/${post.id}`} passHref>
+      <Card>
+        <Figure>
+          <img alt={post.title} src={post.image} />
+        </Figure>
+        <Title>{post.title}</Title>
+        <Lead>{post.lead}</Lead>
+      </Card>
+    </Link>
+  )
 }

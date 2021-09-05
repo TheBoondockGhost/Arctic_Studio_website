@@ -1,1 +1,1 @@
-export { Center } from "./style";
+export * from "./style";

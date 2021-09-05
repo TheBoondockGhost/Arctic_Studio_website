@@ -1,27 +1,27 @@
 import React from "react";
 import Head from "next/head";
-
 import { ThemeProvider } from "styled-components";
-import { Header } from "../components/Header/Header";
-import { Footer } from "../components/Footer/Footer";
+
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 import { Center } from "../components/Center";
-import { GlobalStyle, theme } from "../shared/theme"
+import { GlobalStyle, theme } from "../shared/theme";
 
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyle theme={theme} />
+      <Head>
+        <title>What's Next?!</title>
+      </Head>
 
-export default function MyApp({ Component, PageProps }) {
-    return (
-        <ThemeProvider theme={theme}>
-            <GlobalStyle theme={theme} />
-            <Head>
-                <title>WHat's next?</title>
-            </Head>
-            <Header />
-            <main>
-                <Center>
-                    <Component {...PageProps} />
-                </Center>
-            </main>
-            <Footer />
-        </ThemeProvider>
-    )
+      <Header />
+      <main className="main">
+        <Center>
+          <Component {...pageProps} />
+        </Center>
+      </main>
+      <Footer />
+    </ThemeProvider>
+  );
 }

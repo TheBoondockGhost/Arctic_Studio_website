@@ -1,20 +1,30 @@
-import React from "react";
-import Head from "next/head";
-import { StartPage } from "../components/StartPage";
+import React from "react"
+import Head from "next/head"
+import { Post, Category } from "../shared/types"
+import { Feed } from "../components/Feed"
+import { fetchPosts, fetchCategories } from "../api/summary"
 
+type FrontProps = {
+  posts: Post[]
+  categories: Category[]
+}
 
+export async function getStaticProps() {
+  const categories = await fetchCategories()
+  const posts = await fetchPosts()
+  return { props: { posts, categories } }
+}
 
-export default function Front() {
-    
+export default function Front({ posts, categories }: FrontProps) {
+  return (
+    <>
+      <Head>
+        <title>Front page of the Internet</title>
+      </Head>
 
-    return (
-        <>
-            <Head>
-                <title>Front Page</title>
-            </Head>
-            <main>
-                <StartPage />
-            </main>
-        </>
-    );
+      <main>
+        <Feed posts={posts} categories={categories} />
+      </main>
+    </>
+  )
 }
