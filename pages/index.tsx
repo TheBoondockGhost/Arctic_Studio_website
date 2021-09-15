@@ -2,6 +2,7 @@ import React from "react"
 import Head from "next/head"
 import { Post, Category } from "../shared/types"
 import { Feed } from "../components/Feed"
+import { StartPage } from "../components/StartPage"
 import { fetchPosts, fetchCategories } from "../api/summary"
 
 type FrontProps = {
@@ -19,12 +20,11 @@ export default function Front({ posts, categories }: FrontProps) {
   return (
     <>
       <Head>
-        <title>Front page of the Internet</title>
+        <title>Arctic studio</title>
       </Head>
 
-      <main>
-        <Feed posts={posts} categories={categories} />
-      </main>
+      <StartPage />
+
     </>
   )
 }

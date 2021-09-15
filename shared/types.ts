@@ -15,3 +15,10 @@ export type Post = {
   image: UriString
   source: UriString
 }
+
+export type WhatWeDoCardProps = {
+  id?: EntityId,
+  title: string,
+  lead: string,
+  image: UriString,
+}
