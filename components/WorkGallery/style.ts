@@ -16,6 +16,7 @@ export const SectionTitle = styled.h2`
 `;
 
 export const Card = styled.div`
+  height: 100%;
   border-radius: 6px;
   overflow: hidden;
   background-color: #fff;

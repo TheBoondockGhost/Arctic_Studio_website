@@ -102,6 +102,11 @@ height: 900px;
 align-items: center;
 justify-content: space-between;
 // -webkit-box-orient: vertical;
+
+  @media (max-width: 1130px) {
+    flex-wrap: nowrap;
+    height: 1850px;
+  }
 `;
 
 export const LogisticBox = styled.div`

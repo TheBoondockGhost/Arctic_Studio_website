@@ -20,8 +20,8 @@ export const Header = () => {
             <li><a href="#what-we-do">Чем мы занимаемся</a></li>
             <li><a href="#services-and-prices">Услуги и цены</a></li>
             <li><a href="#work-gallery">Галерея работ</a></li>
-            <li><a href="#">Полезные статьи</a></li>
-            <li><a href="#">Контакты</a></li>
+            {/* <li><a href="#">Полезные статьи</a></li> */}
+            <li><a href="#Contacts">Контакты</a></li>
           </ul>
         </Nav>
       </Center>

@@ -4,10 +4,9 @@
   "description": "Static_site",
   "main": "index.js",
   "scripts": {
+    "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "serve": "ts-node -O '{\"module\": \"commonjs\"}' ./server/index.ts",
-    "dev": "concurrently --kill-others \"npm run serve\" \"next\""
+    "start": "next start"
   },
   "author": "Alexei Dubenskii",
   "license": "ISC",

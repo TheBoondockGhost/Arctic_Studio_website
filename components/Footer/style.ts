@@ -58,7 +58,7 @@ export const Messengers = styled.div`
 
   [data-icon="instagram"]:hover {
     cursor: pointer;
-    color: ${({theme}) => theme.colors.instagramHover};
+    // color: ${({theme}) => theme.colors.instagramHover};
   }
 
   [data-icon="whatsapp"] {
@@ -67,7 +67,7 @@ export const Messengers = styled.div`
 
   [data-icon="whatsapp"]:hover {
     cursor: pointer;
-    color: ${({theme}) => theme.colors.whatsAppHover};
+    // color: ${({theme}) => theme.colors.whatsAppHover};
   }
 
   [data-icon="vk"] {
@@ -76,7 +76,7 @@ export const Messengers = styled.div`
 
   [data-icon="vk"]:hover {
     cursor: pointer;
-    color: ${({theme}) => theme.colors.vkHover};
+    // color: ${({theme}) => theme.colors.vkHover};
   }
 
 `;

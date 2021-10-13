@@ -24,10 +24,10 @@ export const PriceList = ({ priceListCards }: PriceListProps) => {
         <>
             {priceListCards.map((card) => (
                 card?.logistic ? (
-                    <PriceCard>
+                    <PriceCard key={card.id}>
                         <LogisticBox>
                             {card.priceList.map(service => (
-                                <PriceListItem>
+                                <PriceListItem key={service.description}>
                                     <ServiceDescription>
                                         {service.description}
                                     </ServiceDescription>

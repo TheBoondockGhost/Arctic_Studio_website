@@ -39,7 +39,7 @@ position: relative;
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1140px) {
   &:after,
   & > * {
     width: 100%;

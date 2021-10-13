@@ -18,7 +18,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <Container>
+    <Container id={"Contacts"}>
       <Center>
         {/* <a href="https://newline.co">Newline.co</a> {currentYear} */}
         <ConnectionCard>
@@ -26,7 +26,7 @@ export const Footer = () => {
             <ListBody>
               <li><BoldText><a>Акции и скидки</a></BoldText></li>
               <li><BoldText><a>Галерея работ</a></BoldText></li>
-              <li><BoldText><a>Полезные статьи</a></BoldText></li>
+              {/* <li><BoldText><a>Полезные статьи</a></BoldText></li> */}
             </ListBody>
             <ContactBlock>
               <BoldText>Контакты</BoldText>
