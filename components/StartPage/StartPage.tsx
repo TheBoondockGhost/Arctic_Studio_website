@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import {
     Card,
     CardTitle,
@@ -29,7 +28,7 @@ export const StartPage = () => {
         <section style={{ position: "relative", width: "100%" }}>
                 <Decor>
                     <Card>
-                        <Image src="/images/logo_1.png" width={169} height={133} />
+                        <img src="/images/logo_1.png" width={169} height={133} />
                         <CardTitle>ARCTIC STUDIO</CardTitle>
                         <CardSubTitle>Пуховая мастерская</CardSubTitle>
                         <CardContent>Московская область</CardContent>

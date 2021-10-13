@@ -70,6 +70,10 @@ export const Figure = styled.figure`
   }
 `;
 
+export const Img = styled.img`
+  object-fit: cover;
+`;
+
 export const Title = styled.h3`
   margin: 10px 20px;
   font-size: 1.4rem;

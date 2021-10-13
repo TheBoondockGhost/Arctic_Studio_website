@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { WorkGallery as WorkGalleryTypes } from "../../shared/types";
 import { Card, Figure, Lead } from './style';
 import Carousel from "./Carousel.module.css";
@@ -14,7 +13,7 @@ export const WorkGalleryCard = ({ work }: WorkGalleryProps) => {
             <div className={Carousel.embla__slide}>
                 <Card>
                     <Figure>
-                        <Image src={work.image} width={322} height={330} />
+                        <img src={work.image} width={320} height={320} />
                     </Figure>
                     <Lead>{work.lead}</Lead>
                 </Card>

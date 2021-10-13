@@ -1,5 +1,5 @@
-import Link from "next/link"
-import Image from "next/image"
+// import Link from "next/link"
+// import Image from "next/image"
 import { Center } from "../Center"
 import { Container, Logo, Nav } from "./style"
 
@@ -10,7 +10,7 @@ export const Header = () => {
         <Nav>
           <Logo>
             <a href="/">
-              <Image src="/images/logo_1.png" width={90} height={71} />
+              <img src="/images/logo_1.png" width={90} height={71} />
             </a>
             {/* <Link href="/">
             <a>What's Next?!</a>

@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import { Card, Figure, Title, Lead } from "./style";
+import { Card, Figure, Img, Title, Lead } from "./style";
 import { WhatWeDoCardProps } from "../../shared/types";
 
 export const WhatWeDoCard = ({title, image, lead}: WhatWeDoCardProps) => {
@@ -8,7 +7,7 @@ export const WhatWeDoCard = ({title, image, lead}: WhatWeDoCardProps) => {
         <>
         <Card>
             <Figure>
-                <Image alt={title} src={image} layout={"responsive"} width={340} height={180} objectFit={"cover"}/>
+                <Img alt={title} src={image} width={340} height={180}/>
                 {/* <img alt={title} src={image} /> */}
             </Figure>
             <Title>{title}</Title>

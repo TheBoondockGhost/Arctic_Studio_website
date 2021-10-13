@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import {
     ServiceSection,
     SectionTitle,
@@ -170,7 +169,7 @@ export const ServicesAndPrices = () => {
                             <p>
                                 ARCTIC STUDIO
                             </p>
-                            <Image src="/images/logo_1.png" width={250} height={200} />
+                            <img src="/images/logo_1.png" width={200} height={150} />
                         </DecorName>
                     </PriceCard>
                 </ServiceSection>
