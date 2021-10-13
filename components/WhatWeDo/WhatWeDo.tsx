@@ -1,5 +1,5 @@
 import React from "react";
-import { Section, SectionTitle, DecorCircle, Grid } from "./style";
+import { SectionTitle, DecorCircle, Grid } from "./style";
 import { WhatWeDoCard } from "./WhatWeDoCard";
 
 
@@ -9,13 +9,13 @@ export const WhatWeDo = ({title}) => {
     const leadThree = "Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.";
     return (
         <>
-            <section id={"what-we-do"} style={{ position: "relative", width: "100%" }}>
+            <section id={"what-we-do"} style={{ position: "relative", width: "100%", padding: "70px 0" }}>
                 <SectionTitle>{title}</SectionTitle>
             <DecorCircle />
                 <Grid>
                     <WhatWeDoCard image={"/images/whatWeDo/WhatWeDo_1.jpg"} title={"Реанимация пуховиков"} lead={leadOne} />
                     <WhatWeDoCard image={"/images/whatWeDo/WhatWeDo_2.jpg"} title={"Ремонт пуховиков"} lead={leadTwo} />
-                    <WhatWeDoCard image={"/images/whatWeDo/WhatWeDo_3.jpg"} title={"Пошив пуховых изделий"} lead={leadThree} />
+                    <WhatWeDoCard image={"/images/whatWeDo/WhatWeDo_4.jpeg"} title={"Пошив пуховых изделий"} lead={leadThree} />
                 </Grid>
             </section>
         </>

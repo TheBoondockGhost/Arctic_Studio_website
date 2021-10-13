@@ -1,0 +1,133 @@
+.embla {
+  position: relative;
+    overflow: hidden;
+    padding: 20px 50px 0;
+  }
+  /* .embla__container {
+    display: flex;
+  } */
+
+  .embla__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .embla__container:after {
+    content: "";
+    flex: auto;
+  }
+
+  .embla__container:after,
+  .embla__container > * {
+    width: calc(33% - 10px);
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 800px) {
+    .embla__slider:after,
+    .embla__slide > * {
+      width: 100%;
+    }
+  }
+
+  .embla__viewport {
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .embla__slide {
+    position: relative;
+    flex: 0 0 30%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .embla__viewport.is_draggable {
+    cursor: move;
+    cursor: grab;
+  }
+  
+  .embla__viewport.is_dragging {
+    cursor: grabbing;
+  }
+  
+  /* .embla__container {
+    display: flex;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    margin-left: -10px;
+  } */
+
+  .embla__button {
+    outline: 0;
+    cursor: pointer;
+    background-color: transparent;
+    touch-action: manipulation;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    fill: #33779B;
+    padding: 0;
+  }
+  
+  .embla__button:disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
+  
+  .embla__button__svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .embla__button_prev {
+    left: 7px;
+  }
+  
+  .embla__button_next {
+    right: 7px;
+  }
+  
+  .embla__dots {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  .embla__dot {
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .embla__dot:after {
+    background-color: #efefef;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    content: "";
+  }
+  
+  .embla__dot.is_selected:after {
+    background-color: #33779B;
+    opacity: 1;
+  }

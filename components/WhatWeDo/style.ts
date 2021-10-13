@@ -4,20 +4,21 @@ export const Section = styled.section`
     position: relative;
     width: 100%;
     margin-top: 80px;
+    padding-top: 70px;
 `;
 
 export const SectionTitle = styled.h2`
   font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.1;
-  margin: 10px 0 15px;
+  margin: 10px 0 45px;
   text-align: center;
   color: ${({theme}) => theme.colors.primeColor};
   text-transform: uppercase;
   letter-spacing: 0.15em;
 
   @media (max-width: 800px) {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 `;
 
@@ -47,7 +48,7 @@ position: relative;
 `;
 
 export const Card = styled.div`
-  border-radius: 6px;
+
   overflow: hidden;
   color: black;
   text-decoration: none;
@@ -60,7 +61,7 @@ export const Figure = styled.figure`
   max-width: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: 6px 6px 0 0;
+
 
   img {
     width: 100%;

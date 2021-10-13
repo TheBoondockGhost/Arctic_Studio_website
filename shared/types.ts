@@ -22,3 +22,27 @@ export type WhatWeDoCardProps = {
   lead: string,
   image: UriString,
 }
+
+export type PriceListItem = {
+  description?: string,
+  price?: string,
+  volume?: string,
+  call?: string,
+  priceOne?: string,
+  priceTwo?: string,
+  volumeOne?: string,
+  volumeTwo?: string,
+}
+
+export type PriceList = {
+  id?: EntityId,
+  title?: string,
+  priceList: PriceListItem[],
+  logistic?: boolean,
+}
+
+export type WorkGallery = {
+  id?: EntityId,
+  lead: string,
+  image: UriString,
+}

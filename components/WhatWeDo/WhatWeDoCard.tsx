@@ -8,8 +8,8 @@ export const WhatWeDoCard = ({title, image, lead}: WhatWeDoCardProps) => {
         <>
         <Card>
             <Figure>
-                {/* <Image src={image} width={"100%"} height={"100%"}/> */}
-                <img alt={title} src={image} />
+                <Image alt={title} src={image} layout={"responsive"} width={340} height={180} objectFit={"cover"}/>
+                {/* <img alt={title} src={image} /> */}
             </Figure>
             <Title>{title}</Title>
             <Lead>{lead}</Lead>

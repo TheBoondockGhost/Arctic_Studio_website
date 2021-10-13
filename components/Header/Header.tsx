@@ -18,8 +18,8 @@ export const Header = () => {
           </Logo>
           <ul>
             <li><a href="#what-we-do">Чем мы занимаемся</a></li>
-            <li><a href="#">Услуги и цены</a></li>
-            <li><a href="#">Галерея работ</a></li>
+            <li><a href="#services-and-prices">Услуги и цены</a></li>
+            <li><a href="#work-gallery">Галерея работ</a></li>
             <li><a href="#">Полезные статьи</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>

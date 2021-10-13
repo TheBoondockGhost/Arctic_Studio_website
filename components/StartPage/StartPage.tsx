@@ -11,10 +11,10 @@ import {
 } from "./style";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faVk, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-
 import { CircleImage } from "../CircleImage";
-
 import { WhatWeDo } from "../WhatWeDo";
+import { ServicesAndPrices } from "../ServicesAndPrices/ServicesAndPrices";
+import { WorkGallery } from "../WorkGallery";
 
 export const StartPage = () => {
     const [windowWidth, setWindowWidth] = useState(null)
@@ -52,6 +52,8 @@ export const StartPage = () => {
                 </Decor>
             </section>
             <WhatWeDo title={"Чем мы занимаемся"}/>
+            <ServicesAndPrices />
+            <WorkGallery />
         </main>
         </>
     )
